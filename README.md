@@ -1,6 +1,6 @@
 <div align="center">
 <br>
-<img src="assets/moriartylogo.png" width="20%" />
+<img src="assets/nevadalogo.png" width="20%" />
 <br>
 M O R I A R T Y
 <br>
@@ -30,3 +30,14 @@ Linker: Microsoft Visual Studio Linker (link.exe) or GoLink.
 4. Compile the source code into an object file:
 ```bash
 nasm -f win64 moriarty.asm -o moriarty.obj
+```
+Link the object file to create the executable:
+```bash
+link /subsystem:console /entry:_start /out:moriarty.exe moriarty.obj kernel32.lib user32.lib
+```
+Execute the binary to start the encryption protocol:
+```bash
+.\moriarty.exe
+```
+The engine performs a Polymorphic XOR-Rotation on the target file, mutating the encryption key every 8 bytes to ensure high entropy and bypass static signature detection.
+<small>W Y X N A R</small>
