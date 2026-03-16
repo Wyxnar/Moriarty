@@ -40,4 +40,5 @@ Execute the binary to start the encryption protocol:
 .\moriarty.exe
 ```
 The engine performs a Polymorphic XOR-Rotation on the target file, mutating the encryption key every 8 bytes to ensure high entropy and bypass static signature detection.
+
 <small>W Y X N A R</small>
