@@ -1,6 +1,6 @@
 <div align="center">
 <br>
-<img src="assets/nevadalogo.png" width="20%" />
+<img src="assets/moriartylogo.png" width="20%" />
 <br>
 M O R I A R T Y
 <br>
